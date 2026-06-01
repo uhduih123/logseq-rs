@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* Logseq-RS 主题变量 */
+:root {
+  --ls-primary: #4b6cc1;
+  --ls-primary-bg: #e8edf5;
+  --ls-secondary: #666666;
+  --ls-border: #e0e0e0;
+  --ls-bg: #ffffff;
+  --ls-bg-secondary: #f7f7f7;
+  --ls-text: #333333;
+  --ls-text-secondary: #999999;
+  --ls-highlight: #fffbdd;
+  --ls-radius: 6px;
+  --ls-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.dark {
+  --ls-primary: #6b92f7;
+  --ls-primary-bg: #1a2238;
+  --ls-secondary: #999999;
+  --ls-border: #333333;
+  --ls-bg: #1e1e1e;
+  --ls-bg-secondary: #252525;
+  --ls-text: #dddddd;
+  --ls-text-secondary: #888888;
+  --ls-highlight: #3d3520;
+  --ls-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* 大纲编辑器全局样式 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--ls-bg);
+  color: var(--ls-text);
+  overflow: hidden;
+  height: 100vh;
+}

@@ -1,0 +1,26 @@
+[package]
+name = "logseq-rs"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "logseq_rs_lib"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-shell = "2"
+tauri-plugin-fs = "2"
+tauri-plugin-dialog = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4"] }
+chrono = { version = "0.4", features = ["serde"] }
+
+logseq-core = { path = "../crates/core" }
+logseq-parser = { path = "../crates/parser" }
+logseq-db = { path = "../crates/db" }
+logseq-search = { path = "../crates/search" }

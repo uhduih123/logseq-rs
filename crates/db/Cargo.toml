@@ -1,0 +1,22 @@
+[package]
+name = "logseq-db"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }
+tracing = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+rusqlite = { version = "0.31", features = ["bundled"] }
+regex-lite = "0.1"
+notify = { version = "7", features = ["macos_kqueue"] }
+walkdir = "2"
+logseq-parser = { path = "../parser" }
+logseq-core = { path = "../core" }
+
+[dev-dependencies]
+tempfile = "3"
